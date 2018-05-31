@@ -2,7 +2,7 @@
 
 //Block 0 was not mined but simply exists when Blockchain instantializes
 Blockchain::Blockchain() {
-    _vChain.emplace_back(Block(0, "Genesis Block"));
+    _vChain.emplace_back(Block(0, "Genesis Block Datum"));
     _nDifficulty = 6;
 }
 
