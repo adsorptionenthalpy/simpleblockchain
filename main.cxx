@@ -9,14 +9,15 @@ int main() {
 	
 	const uint32_t MAXBLOCKS = 18000000;
 	const uint32_t STARTINGBLOCK = 1;
-	
+	std::stringstream sBlockdata;
     Blockchain AdamChain = Blockchain();
 
 	for (uint32_t blocknum = STARTINGBLOCK; blocknum <= MAXBLOCKS; blocknum++)
 	{
 	
 		std::cout << "Mining block " << blocknum << "..." << std::endl;
-		AdamChain.AddBlock(Block(blocknum, "Block 1 Data"));
+		sBlockdata << "Block " << blocknum << "data";
+		AdamChain.AddBlock(Block(blocknum, sBlockdata.str()));
 	}
 	
 	std::cout << "She's dead, Jim... "<< std::endl;
