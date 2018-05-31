@@ -10,7 +10,7 @@ int main() {
 	const uint32_t MAXBLOCKS = 18000000;
 	const uint32_t STARTINGBLOCK = 1;
 	std::stringstream sBlockdata;
-    Blockchain AdamChain = Blockchain();
+   	Blockchain AdamChain = Blockchain();
 
 	for (uint32_t blocknum = STARTINGBLOCK; blocknum <= MAXBLOCKS; blocknum++)
 	{
